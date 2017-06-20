@@ -186,7 +186,7 @@ router.get('/caroftheweek/',cors(), function (req, res) {
   res.end(JSON.stringify(cotw));
 });
 
-app.get('/buttons', cors(), function (req, res) {
+router.get('/buttons', cors(), function (req, res) {
   res.writeHead(200, {"Content-Type": "application/json"});
   res.end(JSON.stringify({buttons: [9, 5, -30, -45], bars: [89, 54, 33, 22]}));
 });
